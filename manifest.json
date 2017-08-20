@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "搜狐考勤解释",
+    "name": "搜狐考勤解释自动化工具",
     "version": "1.0",
-    "description": "搜狐考勤解释Chrome扩展",
+    "description": "搜狐考勤解释自动化工具",
     "icons": {
         "16": "images/icon.png",
         "48": "images/icon.png"
@@ -12,7 +12,7 @@
             "19": "images/icon.png",
             "38": "images/icon.png"
         },
-        "default_title": "搜狐考勤解释工具"
+        "default_title": "搜狐考勤解释自动化工具"
        // "default_popup": "popup.html"
     },
 
