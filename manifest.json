@@ -26,7 +26,7 @@
     "content_scripts": [
         {
             // "matches": ["*://oa.sohu-inc.com/WorkSpace/MyJoined.aspx"],//改成你要加载的页面url,比如*://www.baidu.com/
-            "matches": ["*://oa.sohu-inc.com/Process/ITS/ITSApply/ITSApplyMain.aspx"],
+            "matches": ["*://oa.sohu-inc.com/Process/ADF/AI_Manage/*"],
             "js": ["js/index.js"],
             "run_at": "document_end"
         }
