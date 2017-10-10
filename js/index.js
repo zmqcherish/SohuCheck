@@ -48,7 +48,7 @@ function handle(tr){
                 cTable[0].firstChild.value  = "62728b0b-538b-423b-ba2b-c5928691b2db";//周末加班 津贴
                 addOnChange(cTable[0].firstChild);
 
-                cTable[2].children[1].value = start[0];
+                cTable[2].children[1].value = start[0]; 
                 addOnChange(cTable[2].children[1]);
                 
                 cTable[2].children[2].value = start[1];
@@ -56,8 +56,11 @@ function handle(tr){
 
                 cTable[3].children[1].value = end[0];
                 addOnChange(cTable[3].children[1]);
-
-                cTable[3].children[2].value = end[1];
+                if(end[1][0]=='0'){
+                    cTable[3].children[2].value = end[1][1];
+                }else{
+                    cTable[3].children[2].value = end[1];
+                }
             }
             else if(endHour>20 || (endHour==20&&endMin>=30)){
                 
@@ -85,7 +88,11 @@ function handle(tr){
                 cTable2[3].children[1].value = end[0];
                 addOnChange(cTable2[3].children[1]);
 
-                cTable2[3].children[2].value = end[1];
+                if(end[1][0]=='0'){
+                    cTable2[3].children[2].value = end[1][1];
+                }else{
+                    cTable2[3].children[2].value = end[1];
+                }
             }
             content[0].children[1].firstChild.click();
         }
