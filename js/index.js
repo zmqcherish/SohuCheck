@@ -33,7 +33,7 @@ function handle(tr){
         var trrs = td.children[0].children;
         var times = trrs[3].innerText;
         var end = times.split("~")[1].split(":");
-        trrs[7].firstChild.firstChild.click();
+        trrs[8].firstChild.firstChild.click();
 
         var content = td.children[1].firstChild.firstChild.children;
         var contentTable = content[0].firstChild.children[2];
